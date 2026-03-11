@@ -4,24 +4,21 @@ public class PracticeProblem {
 
 	}
 
-	public static void q1() {
-		//Write question 1 code here
-	}
-
-	public static void q2() {
-		//Write question 2 code here
-	}
-
-	public static void q3() {
-		//Write question 3 code here
-	}
-
-	public static void q4() {
-		//Write question 4 code here
-	}
-
-	public static void q5() {
-		//Write question 5 code here
+	public static void bubbleSortString(String [] strings) {
+		for (int i=0; i<strings.length-1;i++) {
+			boolean c=false;
+			for (int j=0;j<strings.length-1;j++) {
+				if (strings[j].compareToIgnoreCase(strings[j+1])>0) {
+					String x=strings[j];
+					strings[j]=strings[j+1];
+					strings[j+1]=x;
+					c=true;
+				}
+			}
+			if (!c) {
+				i=strings.length;
+			}
+		}
 	}
 
 }
